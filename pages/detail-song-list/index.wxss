@@ -1,0 +1,7 @@
+/* pages/detail-song-list/index.wxss */
+page {
+  padding: 0 20rpx;
+}
+.song-list {
+  padding: 20rpx 0;
+}

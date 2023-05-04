@@ -1,0 +1,9 @@
+<!--components/song-menu-item/index.wxml-->
+<wxs src="/utils/formatUtils.wxs" module="format"></wxs>
+<view class="song-menu-item">
+  <view class="cover">
+    <image class="image" mode="widthFix" src="{{item.coverImgUrl}}"></image>
+    <view class="play-count">{{format.formatPlayCount(item.playCount)}}</view>
+  </view>
+  <view class="info">{{item.name}}</view>
+</view>

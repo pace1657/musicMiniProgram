@@ -1,0 +1,13 @@
+<!--components/song-item-v2/index.wxml-->
+<view class="song-item-v2" bindtap="handleToPlayPage">
+  <view class="index">{{index}}</view>
+  <view class="info">
+    <view class="name">{{item.name}}</view>
+    <view class="source">
+      <image class="icon" src="/assets/images/icons/sq_icon.png"></image>
+      <text class="artist">{{item.ar[0].name}}</text>
+      <text class="dots" wx:if="{{item.alia[0]}}">·</text>
+      <text class="alia" wx:if="{{item.alia[0]}}">{{item.alia[0]}}</text>
+    </view>
+  </view>
+</view>

@@ -1,0 +1,12 @@
+<!--pages/detail-video/index.wxml-->
+<view class="video-detail">
+  <video class="video" 
+         src="{{ mvUrlInfo.url }}" 
+         autoplay 
+         loop 
+         enable-play-gesture>
+  </video>
+  <block wx:for="{{100}}" wx:key="*this">
+    <view>{{item}}</view>
+  </block>
+</view>

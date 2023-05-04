@@ -1,0 +1,31 @@
+<!--components/song-menu-header/index.wxml-->
+<wxs src="/utils/formatUtils.wxs" module="format"></wxs>
+<view class="song-menu-header">
+  <!-- 背景 -->
+  <image class="bg-img" src="{{songMenuInfo.coverImgUrl}}" mode="aspectFill"></image>
+  <!-- 高斯模糊遮罩层 -->
+  <view class="bg-cover"></view>
+  <!-- 内容 -->
+  <view class="content">
+    <image class="menu-image" src="{{songMenuInfo.coverImgUrl}}" mode="aspectFill"></image>
+    <view class="menu-info">
+      <view class="title">{{songMenuInfo.name}}</view>
+      <view class="author">
+        <image class="avatar" src="{{songMenuInfo.creator.avatarUrl}}" mode="aspectFill"></image>
+        <text class="nickname">{{songMenuInfo.creator.nickname}}</text>
+      </view>
+      <view class="desc">简介：{{songMenuInfo.description}}</view>
+    </view>
+  </view>
+  <view class="operation">
+    <view class="item">
+      <image class="icon" src="/assets/images/icons/favor_icon.png" mode="widthFix"></image>
+      <text class="text"
+            wx:if="{{songMenuInfo.subscribedCount}}">{{format.formatPlayCount(songMenuInfo.subscribedCount)}}</text>
+    </view>
+    <view class="item">
+      <image class="icon" src="/assets/images/icons/share_icon.png" mode="widthFix"></image>
+      <text class="text">分享</text>
+    </view>
+  </view>
+</view>

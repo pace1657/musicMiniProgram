@@ -1,0 +1,59 @@
+/* pages/detail-search/index.wxss */
+page {
+  padding: 57px 20rpx 0;
+}
+/* 搜索框样式 */
+.search-bar {
+  position: fixed;
+  top: 0;
+  left: 20rpx;
+  right: 20rpx;
+}
+.search-bar .van-search {
+  padding: 20rpx 0;
+}
+.search-bar .van-search__content {
+  background-color: #fff;
+}
+/* 热门搜索样式 */
+.hot-search {
+  padding: 0 10rpx;
+}
+.hot-search .keywords {
+  display: flex;
+  flex-wrap: wrap;
+}
+.hot-search .keywords .item {
+  font-size: 26rpx;
+  padding: 10rpx 12rpx;
+  margin: 20rpx 20rpx 0 0;
+  background-color: #fff;
+  border-radius: 16rpx;
+}
+.hot-search .keywords .item:first-of-type {
+  color: #26ce8a;
+}
+/* 推荐搜索样式 */
+.suggest-search {
+  padding: 10rpx;
+}
+.suggest-search .search-value {
+  font-size: 34rpx;
+  font-weight: 700;
+  color: #26ce8a;
+}
+.suggest-list .item {
+  display: flex;
+  align-items: center;
+  margin: 16rpx 0 0 -20rpx;
+}
+.suggest-list .item .icon {
+  width: 66rpx;
+}
+.suggest-list .item .song-name {
+  font-size: 28rpx;
+}
+/* 音乐列表 */
+.song-list {
+  padding-bottom: 20rpx;
+}
